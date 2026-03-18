@@ -27,8 +27,8 @@ const config: Config = {
         },
       },
       fontFamily: {
-        heading: ["Rajdhani", "system-ui", "sans-serif"],
-        body: ["Source Serif 4", "Georgia", "serif"],
+        heading: ["Avenir Next", "Avenir", "-apple-system", "BlinkMacSystemFont", "Segoe UI", "system-ui", "sans-serif"],
+        body: ["Avenir Next", "Avenir", "-apple-system", "BlinkMacSystemFont", "Segoe UI", "system-ui", "sans-serif"],
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
