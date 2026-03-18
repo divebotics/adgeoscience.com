@@ -65,7 +65,7 @@ export const services = [
     title: "UXO Survey",
     tagline: "Safety-critical clearance support",
     description:
-      "Advanced detection and clearance support for unexploded ordnance in complex offshore environments.",
+      "De-risk your project with our comprehensive non-intrusive UXO survey and risk mitigation services.",
     details: [
       "Magnetometry & Gradiometry",
       "AUV-Based Detection",
@@ -174,14 +174,14 @@ export default function ServicesPage() {
                     <div className="p-8 md:p-10">
                       <div className="grid grid-cols-1 md:grid-cols-12 gap-8">
                         <div className="md:col-span-7">
-                          <div className="flex items-center gap-4 mb-4">
+                          {/* <div className="flex items-center gap-4 mb-4">
                             <div className="w-10 h-10 flex items-center justify-center bg-secondary-teal/10 rounded-sm group-hover:bg-secondary-teal/20 transition-colors">
                               <Icon size={20} className="text-secondary-teal" />
                             </div>
                             <span className="font-heading text-xs uppercase tracking-[0.2em] text-secondary-teal">
                               Service {String(i + 1).padStart(2, "0")}
                             </span>
-                          </div>
+                          </div> */}
                           <h2 className="font-heading font-bold text-primary-dark text-3xl mb-3 group-hover:text-secondary-teal transition-colors">
                             {service.title}
                           </h2>
@@ -199,7 +199,7 @@ export default function ServicesPage() {
                             <ArrowRight size={14} className="group-hover/link:translate-x-1 transition-transform" />
                           </Link>
                         </div>
-                        <div className="md:col-span-5">
+                        {/* <div className="md:col-span-5">
                           <div className="bg-template-neutral rounded-sm p-6">
                             <p className="font-heading text-xs uppercase tracking-widest text-primary-gray mb-4">
                               Deliverables & Methods
@@ -213,7 +213,7 @@ export default function ServicesPage() {
                               ))}
                             </ul>
                           </div>
-                        </div>
+                        </div> */}
                       </div>
                     </div>
                   </div>

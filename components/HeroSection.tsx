@@ -45,21 +45,22 @@ export default function HeroSection({
         <div className="absolute inset-0 bg-gradient-to-b from-primary-dark/60 via-primary-dark/40 to-primary-dark/90" />
       </div>
 
-      {/* Coordinate decorations */}
+      {/* Coordinate decorations
       <div className="absolute top-32 right-8 md:right-16 z-10 hidden md:block">
         <p className="coord-decoration">36°N 15°E — Mediterranean Basin</p>
-      </div>
-      <div className="absolute top-32 left-8 md:left-16 z-10 hidden md:block">
+      </div> */}
+
+      {/* <div className="absolute top-32 left-8 md:left-16 z-10 hidden md:block">
         <p className="coord-decoration">Subsurface Intelligence Partner</p>
-      </div>
+      </div> */}
 
       {/* Thin horizontal scan line */}
       <div className="absolute left-0 right-0 z-10 hidden md:block" style={{ top: "38%" }}>
         <div className="max-w-7xl mx-auto px-8">
           <div className="flex items-center gap-4">
-            <div className="h-px flex-1 bg-secondary-teal/20" />
-            <span className="coord-decoration text-[10px]">ADG — GEOPHYSICAL SURVEY OPERATIONS</span>
-            <div className="h-px w-16 bg-secondary-teal/20" />
+            {/* <div className="h-px flex-1 bg-secondary-teal/20" /> */}
+            {/* <span className="coord-decoration text-[10px]">ADG — GEOPHYSICAL SURVEY OPERATIONS</span> */}
+            {/* <div className="h-px w-16 bg-secondary-teal/20" /> */}
           </div>
         </div>
       </div>

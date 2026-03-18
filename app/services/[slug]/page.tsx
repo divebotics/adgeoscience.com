@@ -103,7 +103,7 @@ const servicesData: ServiceData[] = [
     title: "UXO Survey",
     tagline: "Safety-critical clearance support",
     heroDescription:
-      "Advanced detection and clearance support for unexploded ordnance in complex offshore environments.",
+      "Advanced detection and investigation services for unexploded ordnance in complex offshore environments.",
     intro:
       "The Mediterranean and Black Sea contain significant quantities of unexploded ordnance from past conflicts. ADG's UXO survey program provides systematic detection, identification, and risk assessment services that protect personnel and assets during offshore operations.",
     methods: [
@@ -154,7 +154,7 @@ const servicesData: ServiceData[] = [
         desc: "Statistical analysis of long-term datasets to derive design conditions for 1, 10, 100, and 10,000-year return period events.",
       },
     ],
-    applications: ["Offshore Structure Design", "Operational Weather Windows", "Environmental Impact Assessment", "Renewable Energy Resource Assessment", "Navigation & Safety Planning"],
+    applications: ["Offshore Structure Design", "Operational Weather Windows", "Environmental Impact Assessment", "Renewable Energy Resource Assessment", "Coastal Structure Design"],
     relatedSlugs: ["marine-geophysical-survey", "offshore-construction-support"],
   },
 ];

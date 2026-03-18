@@ -28,7 +28,7 @@ const services = [
   {
     icon: Radar,
     title: "UXO Survey",
-    desc: "Advanced detection and clearance support for unexploded ordnance in complex offshore environments.",
+    desc: "Advanced detection and investigation services for unexploded ordnance in complex offshore environments.",
     href: "/services/uxo-survey",
   },
   {

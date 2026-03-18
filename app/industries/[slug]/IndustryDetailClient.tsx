@@ -102,7 +102,7 @@ export default function IndustryDetailClient({ industry }: { industry: IndustryD
               variants={fadeUp}
               className="lg:col-span-5 space-y-6"
             >
-              <div className="bg-template-neutral rounded-sm p-7">
+              {/* <div className="bg-template-neutral rounded-sm p-7">
                 <p className="font-heading text-xs uppercase tracking-widest text-secondary-teal mb-4">
                   Survey Services
                 </p>
@@ -114,7 +114,7 @@ export default function IndustryDetailClient({ industry }: { industry: IndustryD
                     </li>
                   ))}
                 </ul>
-              </div>
+              </div> */}
 
               <div className="border border-secondary-teal/20 rounded-sm p-7">
                 <p className="font-heading text-xs uppercase tracking-widest text-secondary-teal mb-4">

@@ -101,7 +101,6 @@ export default function AboutPage() {
                 </h3>
                 <ul className="space-y-5">
                   {[
-                    "Single integrated survey operation",
                     "1000+ completed projects",
                     "Mediterranean & Black Sea specialists",
                     "DP2 vessel fleet operations",
@@ -125,7 +124,7 @@ export default function AboutPage() {
                 <div className="flex items-start gap-2">
                   <MapPin size={16} className="text-primary-gray mt-0.5 shrink-0" />
                   <p className="font-body text-primary-dark text-base">
-                    Mediterranean Sea and Black Sea — with offices in Catania, Italy and Istanbul, Türkiye
+                    Global operations with a focus on the Mediterranean and the Black Sea — with offices in Catania, Italy and Istanbul, Türkiye
                   </p>
                 </div>
               </div>

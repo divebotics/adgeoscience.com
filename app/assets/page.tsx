@@ -29,13 +29,13 @@ const vessels = [
     image: "/denar/surveyor.jpeg",
     type: "Survey Support Vessel",
     specs: [
-      "DP2 Dynamic Positioning",
+      "A-frame and tow winch",
       "Multibeam & Sub-bottom Systems",
-      "Construction Support Equipment",
-      "ROV & AUV Deployment",
+      "Moon Pool",
+      "Bow Thruster",
     ],
     description:
-      "A versatile survey support vessel optimized for geophysical operations and construction support. Denar Surveyor provides the stable working platform required for precision offshore survey work.",
+      "A versatile nearshore survey vessel, optimized for geophysical survey operations, equipped with high resolution MBES in moon pool and hull mounted CHIRP SBP as well as A-frame and service crane.",
   },
   {
     name: "Denar Echo",
@@ -129,7 +129,7 @@ export default function AssetsPage() {
                 Assets at your service include two DP2 offshore survey and support vessels, manned and unmanned nearshore vessel fleet, jack-up and floating barges capable of drilling, sampling and geophysical testing, topo&amp;bathy LIDAR drone, AUV and ROV&apos;s for multiple use cases.
               </p>
             </motion.div>
-            <motion.div
+            {/* <motion.div
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true }}
@@ -148,7 +148,7 @@ export default function AssetsPage() {
                   <div className="font-body text-sm text-primary-gray">{item.label}</div>
                 </div>
               ))}
-            </motion.div>
+            </motion.div> */}
           </div>
         </div>
       </section>

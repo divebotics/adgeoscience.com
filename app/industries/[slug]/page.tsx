@@ -37,7 +37,7 @@ const industriesData: IndustryData[] = [
     intro:
       "Precise route corridor surveys and burial verification for interconnectors and telecom cables. Submarine cable projects require a comprehensive understanding of the seabed environment along the entire route — from shallow nearshore environments to deep water crossing points.",
     body:
-      "ADG provides the full suite of survey services required for submarine cable projects: route corridor surveys combining bathymetry, sub-bottom profiling, and side-scan sonar; detailed seabed characterization for burial depth assessments; geotechnical investigations at landing points; and post-installation burial verification surveys.",
+      "ADG provides the full suite of survey services required for submarine cable projects: route corridor surveys combining bathymetry, sub-bottom profiling, and side-scan sonar; detailed seabed characterization for burial depth assessments; geotechnical investigations and post-installation burial verification surveys.",
     services: [
       "Route Corridor Surveys",
       "Seabed Feature Mapping",

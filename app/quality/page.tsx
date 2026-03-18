@@ -97,7 +97,7 @@ export default function QualityPage() {
                 Scientific integrity and operational reliability are fundamental to our business. We are committed to sustainability and environmental responsibility. Our quality management approach is built into every stage of survey operations — from pre-mobilization planning through data acquisition, processing, and final deliverable production.
               </p>
               <p className="font-body text-primary-gray text-lg leading-relaxed">
-                We navigate the complexities of local and international maritime standards. Our operations comply with applicable flag state regulations, port state requirements, and international frameworks including IMO and MARPOL standards, ensuring our clients can present compliant deliverables to all regulatory authorities.
+                We navigate the complexities of local and international maritime standards. Our operations comply with applicable flag state regulations, port state requirements, and international frameworks, ensuring our clients can present compliant deliverables to all regulatory authorities.
               </p>
             </motion.div>
 
