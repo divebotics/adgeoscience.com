@@ -51,8 +51,8 @@ export default function Navbar() {
   }, []);
 
   const navClass = scrolled
-    ? "bg-primary-dark/50 backdrop-blur-md shadow-lg"
-    : "bg-primary-dark/50 backdrop-blur-sm";
+    ? "bg-white/25 backdrop-blur-md shadow-lg border-b border-white/10"
+    : "bg-white/15 backdrop-blur-sm border-b border-white/10";
 
   return (
     <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${navClass}`}>
