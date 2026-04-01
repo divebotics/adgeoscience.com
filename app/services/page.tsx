@@ -18,14 +18,7 @@ export const services = [
     tagline: "Complete image of the seafloor",
     description:
       "From surf zone to full ocean depth high resolution bathymetry, 2D HR&UHR seismic, sub-bottom profiling, side-scan sonar and magnetometry for a complete image of the seafloor.",
-    details: [
-      "High Resolution Multibeam Bathymetry",
-      "2D HR & UHR Seismic",
-      "Sub-Bottom Profiling (SBP)",
-      "Side-Scan Sonar (SSS)",
-      "Magnetometry",
-      "Shallow Water & Deep Water Capability",
-    ],
+    image: "/services/marine_geophysical_survey.png",
   },
   {
     slug: "marine-geotechnical-survey",
@@ -34,14 +27,7 @@ export const services = [
     tagline: "Soil certainty for engineering foundations",
     description:
       "Precision CPT, coring, and sediment characterization to define soil parameters with certainty.",
-    details: [
-      "Cone Penetration Testing (CPT)",
-      "Gravity & Piston Coring",
-      "Sediment Characterization",
-      "Geotechnical Lab Analysis",
-      "Foundation Soil Assessment",
-      "Liquefaction Risk Evaluation",
-    ],
+    image: "/services/marine_geotechnical_survey.jpg",
   },
   {
     slug: "offshore-construction-support",
@@ -50,14 +36,7 @@ export const services = [
     tagline: "Precision for infrastructure installation",
     description:
       "Precise positioning, touchdown monitoring, and subsea metrology for infrastructure installation.",
-    details: [
-      "Acoustic Positioning (LBL/USBL)",
-      "Touchdown Monitoring (TDM)",
-      "Subsea Metrology",
-      "As-Built Surveys",
-      "Pipeline Route Verification",
-      "Seabed Model Generation",
-    ],
+    image: "/services/construction_support.jpg",
   },
   {
     slug: "uxo-survey",
@@ -66,14 +45,7 @@ export const services = [
     tagline: "Safety-critical clearance support",
     description:
       "De-risk your project with our comprehensive non-intrusive UXO survey and risk mitigation services.",
-    details: [
-      "Magnetometry & Gradiometry",
-      "AUV-Based Detection",
-      "Risk Assessment & Mapping",
-      "Clearance Planning Support",
-      "Historical Background Research",
-      "Regulatory Compliance Reporting",
-    ],
+    image: "/services/uxo_survey.jpg",
   },
   {
     slug: "metocean-monitoring-modelling",
@@ -82,14 +54,7 @@ export const services = [
     tagline: "Understand the marine environment",
     description:
       "Real-time data and predictive modelling with numerical simulations to understand the impact of marine dynamics on your project.",
-    details: [
-      "Wave & Current Monitoring",
-      "Wind & Meteorological Data",
-      "Numerical Ocean Modelling",
-      "Extreme Event Analysis",
-      "Operational Weather Windows",
-      "Environmental Impact Assessment Support",
-    ],
+    image: "/services/metocean.jpg",
   },
 ];
 
@@ -141,7 +106,7 @@ export default function ServicesPage() {
             className="relative h-64 md:h-96 rounded-sm overflow-hidden"
           >
             <Image
-              src="/survey_image.jpg"
+              src="/services/sand.jpg"
               alt="Marine geophysical survey operations"
               fill
               className="object-cover"
@@ -172,16 +137,8 @@ export default function ServicesPage() {
                 >
                   <div className="bg-white rounded-sm overflow-hidden border border-transparent hover:border-secondary-teal/20 transition-all duration-300 hover:shadow-md group">
                     <div className="p-8 md:p-10">
-                      <div className="grid grid-cols-1 md:grid-cols-12 gap-8">
+                      <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
                         <div className="md:col-span-7">
-                          {/* <div className="flex items-center gap-4 mb-4">
-                            <div className="w-10 h-10 flex items-center justify-center bg-secondary-teal/10 rounded-sm group-hover:bg-secondary-teal/20 transition-colors">
-                              <Icon size={20} className="text-secondary-teal" />
-                            </div>
-                            <span className="font-heading text-xs uppercase tracking-[0.2em] text-secondary-teal">
-                              Service {String(i + 1).padStart(2, "0")}
-                            </span>
-                          </div> */}
                           <h2 className="font-heading font-bold text-primary-dark text-3xl mb-3 group-hover:text-secondary-teal transition-colors">
                             {service.title}
                           </h2>
@@ -199,21 +156,18 @@ export default function ServicesPage() {
                             <ArrowRight size={14} className="group-hover/link:translate-x-1 transition-transform" />
                           </Link>
                         </div>
-                        {/* <div className="md:col-span-5">
-                          <div className="bg-template-neutral rounded-sm p-6">
-                            <p className="font-heading text-xs uppercase tracking-widest text-primary-gray mb-4">
-                              Deliverables & Methods
-                            </p>
-                            <ul className="space-y-2.5">
-                              {service.details.map((detail, j) => (
-                                <li key={j} className="flex items-center gap-3">
-                                  <div className="w-1.5 h-1.5 rounded-full bg-secondary-teal shrink-0" />
-                                  <span className="font-body text-sm text-primary-dark">{detail}</span>
-                                </li>
-                              ))}
-                            </ul>
+                        <div className="md:col-span-5">
+                          <div className="relative h-52 rounded-sm overflow-hidden">
+                            <Image
+                              src={service.image}
+                              alt={service.title}
+                              fill
+                              className="object-cover transition-transform duration-700 group-hover:scale-105"
+                              sizes="(max-width: 768px) 100vw, 40vw"
+                            />
+                            <div className="absolute inset-0 bg-gradient-to-t from-primary-dark/40 to-transparent" />
                           </div>
-                        </div> */}
+                        </div>
                       </div>
                     </div>
                   </div>

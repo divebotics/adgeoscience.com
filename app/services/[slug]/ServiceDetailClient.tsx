@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { motion } from "framer-motion";
 import { ArrowRight, ArrowLeft, Waves, Layers, Shield, Radar, CloudRain } from "lucide-react";
 
@@ -22,6 +23,7 @@ export type ServiceData = {
   iconName: IconName;
   title: string;
   tagline: string;
+  image: string;
   heroDescription: string;
   intro: string;
   methods: ServiceMethod[];
@@ -81,6 +83,19 @@ export default function ServiceDetailClient({
           </motion.div>
         </div>
       </section>
+
+      {/* Full-bleed service image */}
+      <div className="relative h-72 md:h-96 overflow-hidden">
+        <Image
+          src={service.image}
+          alt={service.title}
+          fill
+          className="object-cover"
+          sizes="100vw"
+          priority
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-primary-dark/60 via-transparent to-transparent" />
+      </div>
 
       {/* Intro */}
       <section className="bg-white py-20">
@@ -145,7 +160,7 @@ export default function ServiceDetailClient({
               </span>
             </div>
             <h2 className="font-heading font-bold text-primary-dark text-3xl">
-              Our {service.title} Methodology
+              {service.title} Capabilities
             </h2>
           </motion.div>
 

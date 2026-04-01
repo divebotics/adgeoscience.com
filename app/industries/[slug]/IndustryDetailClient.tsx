@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { motion } from "framer-motion";
 import { ArrowRight, ArrowLeft, Flame, Cable, Wind, Anchor } from "lucide-react";
 
@@ -18,6 +19,7 @@ export type IndustryData = {
   title: string;
   tagline: string;
   color: string;
+  image: string;
   intro: string;
   body: string;
   services: string[];
@@ -73,6 +75,19 @@ export default function IndustryDetailClient({ industry }: { industry: IndustryD
           </motion.div>
         </div>
       </section>
+
+      {/* Full-bleed industry image */}
+      <div className="relative h-72 md:h-96 overflow-hidden">
+        <Image
+          src={industry.image}
+          alt={industry.title}
+          fill
+          className="object-cover"
+          sizes="100vw"
+          priority
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-primary-dark/60 via-transparent to-transparent" />
+      </div>
 
       {/* Content */}
       <section className="bg-white py-20">

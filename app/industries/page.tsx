@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { motion } from "framer-motion";
 import { ArrowRight, Flame, Cable, Wind, Anchor } from "lucide-react";
 
@@ -18,7 +19,7 @@ const industries = [
     description:
       "Integrated surveys for pipeline routing, site screening, and platform structural integrity.",
     color: "#F36C21",
-    bgClass: "from-accent-orange/20 to-accent-orange/5",
+    image: "/industries/oil_and_gas.jpg",
   },
   {
     slug: "submarine-cables",
@@ -28,7 +29,7 @@ const industries = [
     description:
       "Precise route corridor surveys and burial verification for interconnectors and telecom cables.",
     color: "#3DAFC4",
-    bgClass: "from-secondary-teal/20 to-secondary-teal/5",
+    image: "/industries/submarine_cables.jpg",
   },
   {
     slug: "renewables",
@@ -38,7 +39,7 @@ const industries = [
     description:
       "Wind monitoring, site investigations and foundation installation surveys for offshore wind farm developers.",
     color: "#F2D64B",
-    bgClass: "from-accent-gold/20 to-accent-gold/5",
+    image: "/industries/renewables.jpg",
   },
   {
     slug: "positioning-construction-support",
@@ -48,7 +49,7 @@ const industries = [
     description:
       "Reliable positioning, subsea metrology and 3D seabed modelling for dredging and offshore infrastructure placement.",
     color: "#DBCBB8",
-    bgClass: "from-secondary-sand/30 to-secondary-sand/10",
+    image: "/industries/construction_support.jpg",
   },
 ];
 
@@ -123,18 +124,27 @@ export default function IndustriesPage() {
                     href={`/industries/${industry.slug}`}
                     className="group block bg-white rounded-sm overflow-hidden border border-transparent hover:border-secondary-teal/20 transition-all duration-300 hover:shadow-lg h-full"
                   >
-                    {/* Icon area */}
-                    <div
-                      className={`relative h-48 bg-gradient-to-br ${industry.bgClass} flex items-center justify-center border-b border-template-neutral`}
-                    >
+                    {/* Photo area */}
+                    <div className="relative h-56 overflow-hidden">
+                      <Image
+                        src={industry.image}
+                        alt={industry.title}
+                        fill
+                        className="object-cover transition-transform duration-700 group-hover:scale-105"
+                        sizes="(max-width: 768px) 100vw, 50vw"
+                      />
+                      {/* Dark gradient overlay */}
+                      <div className="absolute inset-0 bg-gradient-to-t from-primary-dark/80 via-primary-dark/30 to-transparent" />
+                      {/* Icon badge */}
                       <div
-                        className="w-20 h-20 rounded-full flex items-center justify-center"
-                        style={{ backgroundColor: `${industry.color}20` }}
+                        className="absolute top-4 left-5 w-10 h-10 rounded-sm flex items-center justify-center backdrop-blur-sm"
+                        style={{ backgroundColor: `${industry.color}30`, border: `1px solid ${industry.color}50` }}
                       >
-                        <Icon size={40} style={{ color: industry.color }} />
+                        <Icon size={20} style={{ color: industry.color }} />
                       </div>
-                      <div className="absolute bottom-4 left-6">
-                        <p className="coord-decoration">{industry.tagline}</p>
+                      {/* Tagline */}
+                      <div className="absolute bottom-4 left-5 right-5">
+                        <p className="coord-decoration text-white/70">{industry.tagline}</p>
                       </div>
                     </div>
 

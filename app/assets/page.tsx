@@ -12,6 +12,19 @@ const fadeUp = {
 
 const vessels = [
   {
+    name: "M/V Denar Pathfinder",
+    image: "/denar/pathfinder.png",
+    type: "Offshore Survey Vessel",
+    specs: [
+      "DP2 Dynamic Positioning",
+      "AHC Crane and 2 x A-Frames",
+      "Deep and Shallow Water Survey Capability",
+      "Geotechnical Survey Systems",
+    ],
+    description:
+      "A dedicated offshore support and survey vessel with deep and shallow water geophysical and geotechnical capabilities. Denar Pathfinder can support complex construction support and multi-disciplinary survey programs in challenging offshore environments.",
+  },
+  {
     name: "M/V Denar Explorer",
     image: "/denar/explorer.jpeg",
     type: "Offshore Survey Vessel",
@@ -39,7 +52,7 @@ const vessels = [
   },
   {
     name: "Denar Echo",
-    image: "/denar/echo.jpeg",
+    image: "/denar/echo.png",
     type: "Nearshore Survey Vessel",
     specs: [
       "Shallow Water Operations",

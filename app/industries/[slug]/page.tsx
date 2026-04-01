@@ -9,6 +9,7 @@ const industriesData: IndustryData[] = [
     title: "Oil and Gas",
     tagline: "Integrated surveys for complex offshore environments",
     color: "#F36C21",
+    image: "/industries/oil_and_gas.jpg",
     intro:
       "Integrated surveys for pipeline routing, site screening, and platform structural integrity. The oil and gas sector demands the highest standards of survey accuracy and data quality — ADG delivers fully integrated geoscience programs that reduce risk and accelerate project delivery.",
     body:
@@ -34,6 +35,7 @@ const industriesData: IndustryData[] = [
     title: "Submarine Cables",
     tagline: "Precise route corridors for telecom and power",
     color: "#3DAFC4",
+    image: "/industries/submarine_cables.jpg",
     intro:
       "Precise route corridor surveys and burial verification for interconnectors and telecom cables. Submarine cable projects require a comprehensive understanding of the seabed environment along the entire route — from shallow nearshore environments to deep water crossing points.",
     body:
@@ -59,6 +61,7 @@ const industriesData: IndustryData[] = [
     title: "Renewables",
     tagline: "Site intelligence for offshore wind developers",
     color: "#F2D64B",
+    image: "/industries/renewables.jpg",
     intro:
       "Wind monitoring, site investigations and foundation installation surveys for offshore wind farm developers. The offshore renewables sector demands comprehensive environmental characterization to support foundation design, installation planning, and operational monitoring.",
     body:
@@ -84,6 +87,7 @@ const industriesData: IndustryData[] = [
     title: "Positioning and Construction Support",
     tagline: "Reliable positioning for offshore infrastructure",
     color: "#DBCBB8",
+    image: "/industries/construction_support.jpg",
     intro:
       "Reliable positioning, subsea metrology and 3D seabed modelling for dredging and offshore infrastructure placement. Construction and installation operations in the offshore environment require precise positioning systems and real-time spatial intelligence.",
     body:

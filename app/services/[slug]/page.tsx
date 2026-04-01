@@ -8,6 +8,7 @@ const servicesData: ServiceData[] = [
     iconName: "Waves",
     title: "Marine Geophysical Survey",
     tagline: "Complete image of the seafloor",
+    image: "/services/marine_geophysical_survey.png",
     heroDescription:
       "From surf zone to full ocean depth high resolution bathymetry, 2D HR&UHR seismic, sub-bottom profiling, side-scan sonar and magnetometry for a complete image of the seafloor.",
     intro:
@@ -42,6 +43,7 @@ const servicesData: ServiceData[] = [
     iconName: "Layers",
     title: "Marine Geotechnical Survey",
     tagline: "Soil certainty for engineering foundations",
+    image: "/services/marine_geotechnical_survey.jpg",
     heroDescription:
       "Precision CPT, coring, and sediment characterization to define soil parameters with certainty.",
     intro:
@@ -72,6 +74,7 @@ const servicesData: ServiceData[] = [
     iconName: "Shield",
     title: "Offshore Construction Support",
     tagline: "Precision for infrastructure installation",
+    image: "/services/construction_support.jpg",
     heroDescription:
       "Precise positioning, touchdown monitoring, and subsea metrology for infrastructure installation.",
     intro:
@@ -102,6 +105,7 @@ const servicesData: ServiceData[] = [
     iconName: "Radar",
     title: "UXO Survey",
     tagline: "Safety-critical clearance support",
+    image: "/services/uxo_survey.jpg",
     heroDescription:
       "Advanced detection and investigation services for unexploded ordnance in complex offshore environments.",
     intro:
@@ -132,6 +136,7 @@ const servicesData: ServiceData[] = [
     iconName: "CloudRain",
     title: "Metocean Monitoring and Modelling",
     tagline: "Understand the marine environment",
+    image: "/services/metocean.jpg",
     heroDescription:
       "Real-time data and predictive modelling with numerical simulations to understand the impact of marine dynamics on your project.",
     intro:
